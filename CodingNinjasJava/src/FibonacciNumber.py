@@ -25,10 +25,15 @@ false
 def checkMember(n):
     n1=1
     n2=1
-    while(n1!=n):
+    n3=0
+    while(n3<n):
         n3=n1+n2
-        n2=n1
-        n3=n2
+        n1=n2
+        n2=n3
+    if(n3==n):
+        return 1
+    else:
+        return 0
 
 n=int(input())
 if(checkMember(n)):

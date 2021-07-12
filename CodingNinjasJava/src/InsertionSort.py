@@ -51,7 +51,7 @@ t=int(input())#reading input from user i.e., total no. of test cases
 while(t>0):#loop for test cases
     n=int(input())#reading size of array
     if(n==0):#if size of array is 0 then we need not do anything
-        pass
+        pass#do nothing
     else:#if array has some elements
         a=list(map(int,input().split()))# reading space seperated array elements from the user as input
  """

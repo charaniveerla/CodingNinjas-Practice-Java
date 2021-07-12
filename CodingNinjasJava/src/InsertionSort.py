@@ -35,20 +35,35 @@ Sample Output 2:
 1 2 3 4 
 """
 t=int(input())
-while(t>0):
-    n=int(input())
-    if(n==0):
+while(t>0):#loop for test cases
+    n=int(input())#reading size of array
+    if(n==0):#if size of array is 0 then we need not do anything
         pass
-    else:
+    else:#if array has some elements
         a=list(map(int,input().split()))
+      """
+In insertion sort we basically maintain 2 partitions in the given array, the 1st partition has sorted elements and the 2nd partition has unsorted elements.
+Our target is to bring each of the element in unsorted partition and place it in the correct position of the sorted partition.
+For this, we will follow the following approach:
+By deafult, we assume that 0th index element is the only element in the sorted partitioned array.
+So we start from 1st index position to rest of the array elements and place them in their positions in the sorted partitioned array.
+For that we will start the comparing process from 1st index element
+      """
         for i in range(1,len(a)):
+        #we will store every element that we will be comparing in some temporary variable so that in shifting the positions we dont loose the ith value in each iterations.
             tmp=a[i]
+         #we will compare the ith element with elements in sorted partitioned array from last. So we initialise j with i-1.
             j=i-1
+          #comparing ith and jth elements in two partitions
             while(j>=0 and a[j]>tmp):
+            #shifting positions
                 a[j+1]=a[j]
                 a[j]=tmp
+              #updating j value by decrementing 1 
                 j-=1
+        #printing the complete space seperated array elements in a single line
         for i in a:
             print(i,end=" ")
+        #new line for each testcase
         print()
     t-=1

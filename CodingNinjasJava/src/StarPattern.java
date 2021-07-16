@@ -3,12 +3,11 @@ Code : Star Pattern
 Send Feedback
 Print the following pattern
 Pattern for N = 4
-
-
-
-The dots represent spaces.
-
-
+    
+    *
+   *** 
+  *****
+ *******
 
 Input Format :
 N (Total no. of rows)

@@ -29,7 +29,38 @@ Sample Output 2:
     12
   123
 1234
+
+CODE IN PYTHON:
+-------------
+n=int(input())
+if(n<=0):
+    pass
+#if n==0 you need not do anything
+else:
+    """
+    
+    Approach followed:
+    -------------------
+    1. first print spaces and then go for numbers that are to be printed
+    
+    """
+    #as there are n rows the range is from 1 to n+1
+    for i in range(1,n+1):
+        
+        #we have to print spaces first. If we can observe there are n-i spaces. So range is from 1 to (n-i)+1
+        for j in range(1,(n-i)+1):
+            print(" ",end="")
+            
+        #now we have to print the numbers. In each ith row we have i numbers to be printed. So the range is from 1 to i+1    
+        for j in range(1,i+1):
+            print(j,end="")
+        
+        #taking the control to next line
+        print()
+        
+
 */
+
 import java.util.*;
 public class Solution {
 

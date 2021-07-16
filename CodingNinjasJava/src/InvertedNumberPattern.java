@@ -30,6 +30,26 @@ Sample Output 2:
 333
 22
 1
+
+CODE IN PYTHON:
+--------------
+
+n=int(input())
+if(n==0):
+    pass
+# if n==0 you need not do anything
+else:
+    
+    """
+    Approach followed:
+    ------------------
+    1. If we can observe there are n rows, so we put the range to iterate the rows from 1 to n+1
+    2. Now On each row the value that is being printed is nothing but (n-i)+1
+    3. This value is being printed for (n-i)+1 times
+    """
+    for i in range(1,n+1):
+        print("{}".format((n-i)+1)*((n-i)+1))
+	
 */
 import java.util.*;
 public class Solution {

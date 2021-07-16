@@ -3,15 +3,13 @@ Code : Diamond of stars
 Send Feedback
 Print the following pattern for the given number of rows.
 Note: N is always odd.
-
+  *
+ ***
+*****
+ ***
+  *
 
 Pattern for N = 5
-
-
-
-The dots represent spaces.
-
-
 
 Input format :
 N (Total no. of rows and can only be odd)
@@ -45,7 +43,7 @@ Sample Output 2:
     (Consider for input=5)
     
     a)	*		  |	b)   ***
-       ***		  |		  *
+       ***		  |	      *
       *****		  |		(lower half)
     (upper half)  |
     
